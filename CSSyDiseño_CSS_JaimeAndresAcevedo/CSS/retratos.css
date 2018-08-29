@@ -1,0 +1,616 @@
+body{
+	margin: 20px;
+	background: black;
+    font-family: 'DancingScriptRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+}
+
+
+.cabecera, #titulo{
+    color: white;    
+    font-size: 29px;  
+    text-align: left;
+    text-shadow: 2px 2px #02010a;
+}
+
+/* Hipervinculo */
+header nav a {
+   display: inline-flex;
+   padding-left: 1%;
+   padding-right: 1%;
+   color: white;
+   text-decoration: none;
+}
+
+footer a{
+	color: black;
+	text-decoration: none;
+}
+.contenedor2  a{
+	
+	color: black;
+}
+
+#sociales  a{
+	text-decoration: none;
+	color: black;
+}
+
+
+#inicio{
+	padding-left: 45%; 
+
+}
+
+/* Contenedores*/
+
+.cabecera{
+    background-color: #5b7989;
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+
+}
+
+.cabecera, #menu{
+	text-align: right;
+	font-size: 39px;
+	padding-right: 40px;
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.contenedor2{	
+	background-color:  #d5c75f;
+	padding: 10px;
+	border:1px;
+	display: flex;
+	
+
+}
+
+.contenedor2 > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+	font-size: 20px;
+	flex-direction: column;
+
+}
+
+#footer{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.contenedor3{	
+	background-color:  #C6d5c5;
+	padding: 10px;
+	border:1px;
+	display: flex;
+	flex-direction: row;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.contenedor3 > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+	font-size: 20px;
+}
+
+/* Imagenes*/
+
+
+.contenedor2 img{
+	border: 2px solid ;
+	width: 100%;
+    box-shadow: #d5c75f;
+}
+
+
+#sociales1{
+	border: 2px solid #C6d5c5;
+	width: 15%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+}
+#sociales2{
+	border: 2px solid #C6d5c5;
+	width: 15%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+#sociales3{
+	border: 2px solid #C6d5c5;
+	width: 15%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+/* Animaciones*/
+
+#imagen2{
+
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#imagen1, #imagen4, #imagen6{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);            /*Filtro de escala a grises*/
+}
+
+#imagen5{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);               /*Filtro de sepia*/
+}
+
+#sociales1{
+	-webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+
+}
+
+#sociales1:hover{
+   -webkit-transform:scale(1.25);
+   -moz-transform:scale(1.25);
+   -ms-transform:scale(1.25);
+   -o-transform:scale(1.25);
+   transform:scale(1.25); 
+}
+
+#sociales2{
+	-webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+
+}
+
+#sociales2:hover{
+   -webkit-transform:scale(1.25);
+   -moz-transform:scale(1.25);
+   -ms-transform:scale(1.25);
+   -o-transform:scale(1.25);
+   transform:scale(1.25); 
+}
+
+#sociales3{
+	-webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+    -o-transition:all .9s ease; /* IE 9 */
+    -ms-transition:all .9s ease; /* Opera */
+
+}
+
+#sociales3:hover{
+   -webkit-transform:scale(1.25);
+   -moz-transform:scale(1.25);
+   -ms-transform:scale(1.25);
+   -o-transform:scale(1.25);
+   transform:scale(1.25); 
+}
+
+.total{
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+@keyframes slidein{
+	from{margin-top: 150% }
+	0%{margin-top: 0%}
+	60%{margin-top: 60%}
+	100%{margin-top: 100% }
+	to{margin-top: -5%	}
+}
+
+/* Adaptación para moviles */
+
+@media all and (max-width: 900px) and (min-width:700px) {
+     .cabecera{
+    padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	flex-direction: column;
+  }   
+
+  .cabecera, #titulo{
+    color: white;    
+    font-size: 22px;  
+    text-align: center;
+    text-shadow: 2px 2px #02010a;
+}
+
+  .cabecera, #menu{
+	text-align: center;
+	font-size: 22px;
+	
+}    
+
+	.total{
+		width: 100%;
+		margin: 0 auto;
+		overflow: auto;
+		resize: both;
+		max-width: 1000px;
+		box-sizing: border-box;
+	}
+
+	.contenedor2, .contenedor3 {	
+	
+	    flex-direction: column;
+
+  } 
+
+  .contenedor2 div{
+  	padding-left: 180px;
+  }
+
+  #imagen1{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;
+	float: right;
+
+  }
+
+  #imagen2{
+	
+	width: 100%;
+	height: auto;	
+  }
+
+  #imagen3{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;	
+  }
+
+   #imagen4{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;
+  }
+
+  #imagen5{
+	
+	width: 100%;
+	height: auto;
+	
+  }
+
+  #imagen6{
+	
+	width: 100%;
+	height: auto;
+	
+  }
+
+  #contacto{
+	
+	width: 100%;
+	height: auto;
+  }
+  
+    #terminos{
+	
+	width: 100%;
+	height: auto;
+  }
+
+   #sociales{
+
+   	width: 100%;
+	height: auto;
+   }
+
+   #derechos{
+	
+	width: 100%;
+	height: auto;
+  }
+
+  #sociales1{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+}
+#sociales2{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+#sociales3{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+}
+
+@media all and (max-width: 700px) and (min-width:280px){
+
+	.cabecera{
+    padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	flex-direction: column;
+  }   
+
+  .cabecera, #titulo{
+    color: white;    
+    font-size: 22px;  
+    text-align: center;
+    text-shadow: 2px 2px #02010a;
+}
+
+  .cabecera, #menu{
+	text-align: center;
+	font-size: 22px;
+	
+}     
+
+	.total{
+		width: 100%;
+		margin: 0 auto;
+		overflow: auto;
+		resize: both;
+		max-width: 1000px;
+		box-sizing: border-box;
+	}
+
+   .contenedor2, .contenedor3 {	
+	
+	    flex-direction: column;
+
+  } 
+
+  .contenedor2 div{
+  	padding-left: 90px;
+  }
+
+  #imagen1{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;
+	float: right;
+
+  }
+
+  #imagen2{
+	
+	width: 100%;
+	height: auto;	
+  }
+
+  #imagen3{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;	
+  }
+
+   #imagen4{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;
+  }
+
+  #imagen5{
+	
+	width: 100%;
+	height: auto;
+	
+  }
+
+  #imagen6{
+	
+	width: 100%;
+	height: auto;
+	
+  }
+
+  #contacto{
+	
+	width: 100%;
+	height: auto;
+  }
+  
+    #terminos{
+	
+	width: 100%;
+	height: auto;
+  }
+
+   #sociales{
+
+   	width: 100%;
+	height: auto;
+   }
+
+   #derechos{
+	
+	width: 100%;
+	height: auto;
+  }
+
+  #sociales1{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+}
+#sociales2{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+#sociales3{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+}
+
+@media all and (max-width: 480px) and (min-width:180px){
+   .cabecera{
+    padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	flex-direction: column;
+  }   
+
+  .cabecera, #titulo{
+    color: white;    
+    font-size: 22px;  
+    text-align: center;
+    text-shadow: 2px 2px #02010a;
+
+}
+
+  .cabecera, #menu{
+	text-align: center;
+	font-size: 22px;
+	padding-left: 30px;
+}     
+
+	.total{
+		width: 100%;
+		margin: 0 auto;
+		overflow: auto;
+		resize: both;
+		max-width: 1000px;
+		box-sizing: border-box;
+	}
+
+   .contenedor2, .contenedor3 {	
+	
+	    flex-direction: column;
+
+  } 
+
+  .contenedor2 div{
+  	padding-left: 70px;
+  }
+
+  #imagen1{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;
+	float: right;
+
+  }
+
+  #imagen2{
+	
+	width: 100%;
+	height: auto;	
+  }
+
+  #imagen3{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;	
+  }
+
+   #imagen4{
+	
+	width: 100%;
+	height: auto;
+	margin: auto;
+  }
+
+  #imagen5{
+	
+	width: 100%;
+	height: auto;
+	
+  }
+
+  #imagen6{
+	
+	width: 100%;
+	height: auto;
+	
+  }
+
+  #contacto{
+	
+	width: 100%;
+	height: auto;
+  }
+  
+    #terminos{
+	
+	width: 100%;
+	height: auto;
+  }
+
+   #sociales{
+
+   	width: 100%;
+	height: auto;
+   }
+
+   #derechos{
+	
+	width: 100%;
+	height: auto;
+  }
+
+  #sociales1{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+}
+#sociales2{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+
+}
+
+#sociales3{
+	border: 2px solid #C6d5c5;
+	width: 7%;
+	height: auto;
+	border-radius: 20px 20px 20px 20px;
+
+  }
+}
+
+footer {	
+	text-align: center;
+	color: black;
+
+}
