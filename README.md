@@ -1,2 +1,2 @@
-# Hoja_De_Vida
+# Material estudiantil
 Hoja de vida como material estudiantil
